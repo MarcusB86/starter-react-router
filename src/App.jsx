@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Footer from "./components/common/footer.jsx";
 import Header from "./components/common/header.jsx";
 import Nav from "./components/common/nav.jsx";
@@ -13,6 +14,7 @@ import candles from "./data/candles.json";
 function App() {
   return (
     <div className="App">
+      <Router>
       <Header />
       <div className="wrapper">
         <Nav />
@@ -25,8 +27,10 @@ function App() {
         </main>
       </div>
       <Footer />
+      </Router>
     </div>
   );
 }
+
 
 export default App;
